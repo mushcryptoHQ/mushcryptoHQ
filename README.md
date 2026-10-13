@@ -6,6 +6,7 @@
   <a href="https://mushcrypto.world/"><img src="https://img.shields.io/badge/mushcrypto.world-060a14?style=for-the-badge&logo=googlechrome&logoColor=00b6fd" alt="Website"></a>
   <a href="https://mushcrypto.world/scorecard/"><img src="https://img.shields.io/badge/Governance_Scorecard-060a14?style=for-the-badge&logo=googlesheets&logoColor=e2a63c" alt="Scorecard"></a>
   <a href="https://mushcrypto.world/docs/"><img src="https://img.shields.io/badge/Node_Docs-060a14?style=for-the-badge&logo=readthedocs&logoColor=00b6fd" alt="Docs"></a>
+  <a href="https://github.com/mushcryptoHQ/node-guides"><img src="https://img.shields.io/badge/Node_Guides-060a14?style=for-the-badge&logo=github&logoColor=b98bff" alt="Node Guides"></a>
   <a href="mailto:hello@mushcrypto.xyz"><img src="https://img.shields.io/badge/hello@mushcrypto.xyz-060a14?style=for-the-badge&logo=maildotru&logoColor=f2c675" alt="Email"></a>
 </p>
 
@@ -159,6 +160,34 @@ Before running anything in production, read the full walkthrough in the [docs](h
 
 <br>
 
+## 📚 Node Guides
+
+These are the runbooks we use to operate our own validators. Each one goes from a bare server to a signing validator, step by step and copy-paste ready, and is checked against the official docs and the live chain.
+
+<a href="https://github.com/mushcryptoHQ/node-guides">
+  <img src="./assets/guides-hero.svg" width="100%" alt="MushCrypto Node Guides">
+</a>
+
+<p align="center">
+  <a href="https://github.com/mushcryptoHQ/node-guides/tree/main/celestia"><img src="./assets/guide-celestia.svg" width="49%" alt="Celestia guide"></a>
+  <a href="https://github.com/mushcryptoHQ/node-guides/tree/main/axelar"><img src="./assets/guide-axelar.svg" width="49%" alt="Axelar guide"></a>
+  <a href="https://github.com/mushcryptoHQ/node-guides/tree/main/akash"><img src="./assets/guide-akash.svg" width="49%" alt="Akash guide"></a>
+  <a href="https://github.com/mushcryptoHQ/node-guides/tree/main/shentu"><img src="./assets/guide-shentu.svg" width="49%" alt="Shentu guide"></a>
+</p>
+
+| | Network | Chains | Highlights |
+|:---:|---|---|---|
+| 🟣 | [**Celestia**](https://github.com/mushcryptoHQ/node-guides/tree/main/celestia) | `celestia` · `mocha-5` | Consensus node, validator, **Fibre server**, `x/signal` upgrades |
+| ⚪ | [**Axelar**](https://github.com/mushcryptoHQ/node-guides/tree/main/axelar) | `axelar-dojo-1` | **tofnd + vald**, broadcaster proxy, EVM chain maintainers |
+| 🔴 | [**Akash**](https://github.com/mushcryptoHQ/node-guides/tree/main/akash) | `akashnet-2` | Binary pinned to the official `meta.json`, `validator.json` flow |
+| 🟠 | [**Shentu**](https://github.com/mushcryptoHQ/node-guides/tree/main/shentu) | `shentu-2.2` | State sync, mandatory-upgrade playbook, `validator.json` flow |
+
+<p align="center">
+  <a href="https://github.com/mushcryptoHQ/node-guides"><b>📂 Browse all guides → mushcryptoHQ/node-guides</b></a>
+</p>
+
+<br>
+
 ## ✉️ Ready to see beneath your own network?
 
 Tell us what you run, and we'll show you what MushCrypto catches in the first week.
@@ -171,6 +200,8 @@ Tell us what you run, and we'll show you what MushCrypto catches in the first we
   <a href="https://mushcrypto.world/scorecard/">Scorecard</a>
   &nbsp;·&nbsp;
   <a href="https://mushcrypto.world/docs/">Docs</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/mushcryptoHQ/node-guides">Node Guides</a>
 </p>
 
 <img src="./assets/footer.svg" width="100%" alt="Infrastructure, unseen.">
