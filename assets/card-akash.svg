@@ -24,8 +24,8 @@
   <rect x=".5" y=".5" width="599" height="219" rx="20" fill="url(#halo)"/>
 
   <circle class="ring" cx="58" cy="58" r="25" fill="none" stroke="#ff5a5f" stroke-width="1.6" stroke-dasharray="6 5" stroke-opacity=".7"/>
-  <circle cx="58" cy="58" r="18" fill="#ff5a5f" fill-opacity=".14" stroke="#ff5a5f" stroke-opacity=".6"/>
-  <text x="58" y="65" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="800" fill="#ff5a5f">A</text>
+  <circle cx="58" cy="58" r="20" fill="#0b1224" stroke="#ff5a5f" stroke-opacity=".55"/>
+  <image href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBkPSJNMjc4LjIgNzdMNjMwLjYzNyA2ODZMNzQ4IDQ4Mi45NzdMNTEzLjEgNzdIMjc4LjJWNzdaIiBmaWxsPSIjRjM0QzJEIi8+DQo8cGF0aCBkPSJNMjc4LjIgNDk0LjZMNDAwLjA4NyA2ODZINjQzLjZMNTIxLjg4NyA0OTQuNkgyNzguMlY0OTQuNloiIGZpbGw9IiNCRTMxMkQiLz4NCjxwYXRoIGQ9Ik0xNzMuOCAyNjguNEw1MiA0NzcuMkwxNzMuODg3IDY4Nkw0MTcuNCAyNjguNEgxNzMuOFoiIGZpbGw9IiNGMzRDMkQiLz4NCjwvc3ZnPg0K" x="44" y="44" width="28" height="28"/>
 
   <text x="98" y="55" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="800" fill="#eef3fa" letter-spacing="-.5">Akash</text>
   <text x="99" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" fill="#9aa7bd" letter-spacing="1">akashnet-2</text>
