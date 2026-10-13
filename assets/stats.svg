@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="99.98% uptime tracked, under 120ms alert latency, 24/7 coverage, 0 missed alerts">
+  <defs>
+    <clipPath id="c1"><rect x="20" y="20" width="245" height="64" rx="8"/></clipPath>
+    <linearGradient id="fadeL" x1="0" x2="1">
+      <stop offset="0" stop-color="#00b6fd" stop-opacity="0"/>
+      <stop offset=".25" stop-color="#00b6fd"/>
+      <stop offset="1" stop-color="#7fdcff"/>
+    </linearGradient>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .tile{fill:#0a1020;stroke:#eef3fa;stroke-opacity:.09}
+    .num{font:800 46px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#eef3fa;letter-spacing:-1px}
+    .unit{fill:#00b6fd}
+    .lbl{font:600 11.5px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:2.4px;fill:#9aa7bd}
+    .in{opacity:0;animation:in .8s ease-out forwards}
+    @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    .ecg{animation:scroll 2.4s linear infinite}
+    @keyframes scroll{to{transform:translateX(-120px)}}
+    .sweep{transform-origin:448px 52px;animation:spin 2.6s linear infinite}
+    .clock{transform-origin:752px 52px;animation:spin 6s linear infinite}
+    .hand{transform-origin:752px 52px;animation:spin 1.5s steps(12) infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .check{stroke-dasharray:60;stroke-dashoffset:60;animation:ck 3.2s ease-out infinite}
+    @keyframes ck{0%{stroke-dashoffset:60}30%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
+    .dot{animation:blink 2.4s ease-in-out infinite}
+    @keyframes blink{0%,100%{fill:#1b2a40}40%{fill:#3ddc97}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}
+  </style>
+
+  <!-- 1 · uptime -->
+  <g class="in" style="animation-delay:.05s">
+    <rect class="tile" x="0.5" y="0.5" width="285" height="199" rx="18"/>
+    <g clip-path="url(#c1)">
+      <g class="ecg">
+        <path d="M0 52 H40 L48 52 L54 34 L60 70 L66 22 L72 60 L78 52 H120 H160 L168 52 L174 34 L180 70 L186 22 L192 60 L198 52 H240 H280 L288 52 L294 34 L300 70 L306 22 L312 60 L318 52 H360 H400" transform="translate(20 0)" fill="none" stroke="url(#fadeL)" stroke-width="2.2" stroke-linejoin="round" filter="url(#g)"/>
+      </g>
+    </g>
+    <text class="num" x="24" y="140">99.98<tspan class="unit">%</tspan></text>
+    <text class="lbl" x="26" y="172">UPTIME TRACKED</text>
+  </g>
+
+  <!-- 2 · latency -->
+  <g class="in" style="animation-delay:.2s">
+    <rect class="tile" x="305.5" y="0.5" width="285" height="199" rx="18"/>
+    <g fill="none" stroke="#00b6fd">
+      <circle cx="448" cy="52" r="10" stroke-opacity=".25"/>
+      <circle cx="448" cy="52" r="20" stroke-opacity=".18"/>
+      <circle cx="448" cy="52" r="30" stroke-opacity=".12"/>
+      <circle cx="448" cy="52" r="4" stroke-width="1.5">
+        <animate attributeName="r" values="4;32" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="1;0" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <path class="sweep" d="M448 52 L448 22 A30 30 0 0 1 469 31 Z" fill="#00b6fd" fill-opacity=".28"/>
+    <circle cx="448" cy="52" r="3" fill="#7fdcff" filter="url(#g)"/>
+    <circle cx="466" cy="38" r="2.4" fill="#f2c675" filter="url(#g)"><animate attributeName="opacity" values="0;0;1;0" keyTimes="0;.15;.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <text class="num" x="329" y="140"><tspan class="unit">&lt;</tspan>120<tspan class="unit" font-size="30">ms</tspan></text>
+    <text class="lbl" x="331" y="172">ALERT LATENCY</text>
+  </g>
+
+  <!-- 3 · coverage -->
+  <g class="in" style="animation-delay:.35s">
+    <rect class="tile" x="610.5" y="0.5" width="285" height="199" rx="18"/>
+    <circle cx="752" cy="52" r="28" fill="none" stroke="#eef3fa" stroke-opacity=".08" stroke-width="4"/>
+    <circle class="clock" cx="752" cy="52" r="28" fill="none" stroke="#00b6fd" stroke-width="4" stroke-linecap="round" stroke-dasharray="60 116" filter="url(#g)"/>
+    <line class="hand" x1="752" y1="52" x2="752" y2="34" stroke="#eef3fa" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="752" cy="52" r="2.6" fill="#eef3fa"/>
+    <text class="num" x="634" y="140">24<tspan class="unit">/</tspan>7</text>
+    <text class="lbl" x="636" y="172">MONITORING COVERAGE</text>
+  </g>
+
+  <!-- 4 · missed alerts -->
+  <g class="in" style="animation-delay:.5s">
+    <rect class="tile" x="915.5" y="0.5" width="284" height="199" rx="18"/>
+    <path d="M960 26 L984 34 V54 C984 68 974 76 960 80 C946 76 936 68 936 54 V34 Z" fill="#3ddc97" fill-opacity=".08" stroke="#3ddc97" stroke-opacity=".5" stroke-width="1.5"/>
+    <path class="check" d="M949 53 L957 61 L972 44" fill="none" stroke="#3ddc97" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#g)"/>
+    <g>
+      <rect class="dot" x="1004" y="36" width="10" height="10" rx="2.5" style="animation-delay:0s"/>
+      <rect class="dot" x="1018" y="36" width="10" height="10" rx="2.5" style="animation-delay:.15s"/>
+      <rect class="dot" x="1032" y="36" width="10" height="10" rx="2.5" style="animation-delay:.3s"/>
+      <rect class="dot" x="1046" y="36" width="10" height="10" rx="2.5" style="animation-delay:.45s"/>
+      <rect class="dot" x="1060" y="36" width="10" height="10" rx="2.5" style="animation-delay:.6s"/>
+      <rect class="dot" x="1074" y="36" width="10" height="10" rx="2.5" style="animation-delay:.75s"/>
+      <rect class="dot" x="1088" y="36" width="10" height="10" rx="2.5" style="animation-delay:.9s"/>
+      <rect class="dot" x="1102" y="36" width="10" height="10" rx="2.5" style="animation-delay:1.05s"/>
+      <rect class="dot" x="1004" y="52" width="10" height="10" rx="2.5" style="animation-delay:1.2s"/>
+      <rect class="dot" x="1018" y="52" width="10" height="10" rx="2.5" style="animation-delay:1.35s"/>
+      <rect class="dot" x="1032" y="52" width="10" height="10" rx="2.5" style="animation-delay:1.5s"/>
+      <rect class="dot" x="1046" y="52" width="10" height="10" rx="2.5" style="animation-delay:1.65s"/>
+      <rect class="dot" x="1060" y="52" width="10" height="10" rx="2.5" style="animation-delay:1.8s"/>
+      <rect class="dot" x="1074" y="52" width="10" height="10" rx="2.5" style="animation-delay:1.95s"/>
+      <rect class="dot" x="1088" y="52" width="10" height="10" rx="2.5" style="animation-delay:2.1s"/>
+      <rect class="dot" x="1102" y="52" width="10" height="10" rx="2.5" style="animation-delay:2.25s"/>
+    </g>
+    <text class="num" x="939" y="140">0</text>
+    <text class="lbl" x="941" y="172">MISSED ALERTS TO DATE</text>
+  </g>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Node Docs — a field guide for Celestia node operators. Open the docs.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081124"/>
+      <stop offset="1" stop-color="#04070e"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0" x2="1">
+      <stop offset="0" stop-color="#00b6fd"/>
+      <stop offset="1" stop-color="#003ad7"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="btnClip"><rect x="56" y="232" width="232" height="52" rx="26"/></clipPath>
+    <clipPath id="L1"><rect x="664" y="96" height="24" width="0"><animate attributeName="width" values="0;0;440;440;0" keyTimes="0;.04;.20;.96;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="L2"><rect x="664" y="124" height="24" width="0"><animate attributeName="width" values="0;0;440;440;0" keyTimes="0;.24;.245;.96;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="L3"><rect x="664" y="164" height="24" width="0"><animate attributeName="width" values="0;0;440;440;0" keyTimes="0;.30;.44;.96;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="L4"><rect x="664" y="190" height="24" width="0"><animate attributeName="width" values="0;0;440;440;0" keyTimes="0;.44;.52;.96;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="L5"><rect x="664" y="226" height="24" width="0"><animate attributeName="width" values="0;0;440;440;0" keyTimes="0;.58;.585;.96;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="L6"><rect x="664" y="252" height="24" width="0"><animate attributeName="width" values="0;0;440;440;0" keyTimes="0;.66;.665;.96;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace}
+    .sans{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+    .term{font-size:14.5px;fill:#d7e1f0}
+    .p{fill:#00b6fd}.ok{fill:#3ddc97}.dim{fill:#5d6b82}
+    .sh{animation:shine 3.2s ease-in-out infinite}
+    @keyframes shine{0%{transform:translateX(-260px)}60%,100%{transform:translateX(300px)}}
+    .arr{animation:nudge 1.4s ease-in-out infinite}
+    @keyframes nudge{50%{transform:translateX(6px)}}
+    .cur{animation:cur 1s steps(2) infinite}
+    @keyframes cur{50%{opacity:0}}
+    .root{fill:none;stroke:#00b6fd;stroke-opacity:.35;stroke-width:1.2;stroke-dasharray:1000;stroke-dashoffset:1000;animation:root 7s ease-in-out infinite}
+    @keyframes root{0%{stroke-dashoffset:1000}45%,85%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+    .chip{fill:#eef3fa;fill-opacity:.04;stroke:#eef3fa;stroke-opacity:.12}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <rect x=".5" y=".5" width="1199" height="359" rx="22" fill="none" stroke="#eef3fa" stroke-opacity=".09"/>
+
+  <!-- roots creeping from the button into the terminal -->
+  <path class="root" pathLength="1000" d="M288 258 C 400 258, 420 330, 520 330 S 620 300, 640 260"/>
+  <path class="root" pathLength="1000" d="M288 258 C 380 240, 460 120, 560 110 S 630 120, 640 130" style="animation-delay:.6s"/>
+  <path class="root" pathLength="1000" d="M420 300 C 450 340, 500 350, 560 352" style="animation-delay:1.2s"/>
+
+  <!-- copy -->
+  <text class="mono" x="56" y="74" font-size="12.5" font-weight="600" letter-spacing="4" fill="#00b6fd">NODE DOCS</text>
+  <text class="sans" x="54" y="122" font-size="38" font-weight="800" fill="#eef3fa" letter-spacing="-1">A field guide for</text>
+  <text class="sans" x="54" y="166" font-size="38" font-weight="800" fill="#00b6fd" letter-spacing="-1">Celestia operators.</text>
+  <text class="sans" x="56" y="204" font-size="15.5" fill="#9aa7bd">Light, bridge &amp; full storage nodes — setup to troubleshooting.</text>
+
+  <!-- CTA -->
+  <g>
+    <rect x="56" y="232" width="232" height="52" rx="26" fill="url(#btn)"/>
+    <g clip-path="url(#btnClip)"><rect class="sh" x="56" y="232" width="90" height="52" fill="url(#shine)"/></g>
+    <text class="mono" x="88" y="263" font-size="14" font-weight="700" letter-spacing="2" fill="#fff">OPEN THE DOCS</text>
+    <text class="mono arr" x="246" y="263" font-size="16" font-weight="700" fill="#fff">→</text>
+  </g>
+  <g class="mono" font-size="11" fill="#9aa7bd" letter-spacing="1">
+    <rect class="chip" x="56" y="304" width="92" height="24" rx="12"/><text x="102" y="320" text-anchor="middle">light node</text>
+    <rect class="chip" x="156" y="304" width="100" height="24" rx="12"/><text x="206" y="320" text-anchor="middle">bridge node</text>
+    <rect class="chip" x="264" y="304" width="74" height="24" rx="12"/><text x="301" y="320" text-anchor="middle">systemd</text>
+    <rect class="chip" x="346" y="304" width="78" height="24" rx="12"/><text x="385" y="320" text-anchor="middle">metrics</text>
+    <rect class="chip" x="432" y="304" width="78" height="24" rx="12"/><text x="471" y="320" text-anchor="middle">glossary</text>
+  </g>
+
+  <!-- terminal -->
+  <rect x="640" y="40" width="520" height="280" rx="14" fill="#03060c" stroke="#eef3fa" stroke-opacity=".12"/>
+  <path d="M640 54 A14 14 0 0 1 654 40 H1146 A14 14 0 0 1 1160 54 V72 H640 Z" fill="#0d1526"/>
+  <circle cx="662" cy="56" r="5" fill="#ff5a5f" fill-opacity=".8"/>
+  <circle cx="680" cy="56" r="5" fill="#e2a63c" fill-opacity=".8"/>
+  <circle cx="698" cy="56" r="5" fill="#3ddc97" fill-opacity=".8"/>
+  <text class="mono" x="900" y="60" text-anchor="middle" font-size="11.5" fill="#5d6b82" letter-spacing="1">operator@mocha — celestia-node</text>
+
+  <g class="mono term">
+    <text x="664" y="113" clip-path="url(#L1)"><tspan class="p">$</tspan> celestia light init --p2p.network mocha</text>
+    <text x="664" y="141" clip-path="url(#L2)"><tspan class="ok">  ✓</tspan> <tspan class="dim">node store initialised</tspan></text>
+    <text x="664" y="181" clip-path="url(#L3)"><tspan class="p">$</tspan> celestia light start --core.ip &lt;rpc&gt; \</text>
+    <text x="664" y="207" clip-path="url(#L4)">    --p2p.network mocha</text>
+    <text x="664" y="243" clip-path="url(#L5)"><tspan class="ok">  ✓</tspan> <tspan class="dim">peers connected · headers syncing</tspan></text>
+    <text x="664" y="269" clip-path="url(#L6)"><tspan class="ok">  ◉</tspan> <tspan class="dim">sampling data availability</tspan> <tspan class="cur" fill="#00b6fd">▌</tspan></text>
+  </g>
+</svg>
