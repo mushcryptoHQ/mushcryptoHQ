@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120" role="img" aria-label="Akash node guide">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#2a0d10"/><stop offset=".7" stop-color="#070a16"/><stop offset="1" stop-color="#05080f"/></linearGradient>
+  <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="10"/></filter>
+  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <clipPath id="clip"><rect width="600" height="120" rx="18"/></clipPath>
+</defs>
+<style>
+  .sh{animation:sh 5s ease-in-out infinite}
+  @keyframes sh{0%{transform:translateX(-200px)}50%,100%{transform:translateX(700px)}}
+  .go{animation:go 1.5s ease-in-out infinite}
+  @keyframes go{50%{transform:translateX(5px)}}
+  .ring{transform-origin:60px 60px;animation:spin 9s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#clip)">
+  <rect width="600" height="120" fill="url(#bg)"/>
+  <rect class="sh" x="0" y="0" width="160" height="120" fill="url(#shine)"/>
+</g>
+<rect x=".5" y=".5" width="599" height="119" rx="18" fill="none" stroke="#ff6b6b" stroke-opacity=".32"/>
+<circle cx="60" cy="60" r="34" fill="#ff6b6b" opacity=".28" filter="url(#soft)"><animate attributeName="opacity" values=".18;.4;.18" dur="3.5s" repeatCount="indefinite"/></circle>
+<circle class="ring" cx="60" cy="60" r="31" fill="none" stroke="#ff6b6b" stroke-opacity=".6" stroke-width="1.5" stroke-dasharray="6 5"/>
+<circle cx="60" cy="60" r="25" fill="#0b1224" stroke="#ff6b6b" stroke-opacity=".55"/>
+<image href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBkPSJNMjc4LjIgNzdMNjMwLjYzNyA2ODZMNzQ4IDQ4Mi45NzdMNTEzLjEgNzdIMjc4LjJWNzdaIiBmaWxsPSIjRjM0QzJEIi8+DQo8cGF0aCBkPSJNMjc4LjIgNDk0LjZMNDAwLjA4NyA2ODZINjQzLjZMNTIxLjg4NyA0OTQuNkgyNzguMlY0OTQuNloiIGZpbGw9IiNCRTMxMkQiLz4NCjxwYXRoIGQ9Ik0xNzMuOCAyNjguNEw1MiA0NzcuMkwxNzMuODg3IDY4Nkw0MTcuNCAyNjguNEgxNzMuOFoiIGZpbGw9IiNGMzRDMkQiLz4NCjwvc3ZnPg0K" x="45" y="45" width="30" height="30"/>
+<text x="112" y="50" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="800" fill="#eef3fa" letter-spacing="-.5">Akash</text>
+<text x="113" y="74" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace" font-size="12" fill="#ff6b6b" letter-spacing="1">akashnet-2</text>
+<text x="113" y="96" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" fill="#9aa7bd">Full node &#183; Validator &#183; Upgrades</text>
+<g class="go"><text x="574" y="64" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="700" letter-spacing="1.5" fill="#ff6b6b">GUIDE &#8594;</text></g>
+</svg>
