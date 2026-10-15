@@ -193,8 +193,6 @@ These are the runbooks we use to operate our own validators. Each one goes from 
 Tell us what you run, and we'll show you what MushCrypto catches in the first week.
 
 <p align="center">
-  <a href="mailto:hello@mushcrypto.xyz"><b>hello@mushcrypto.xyz</b></a>
-  &nbsp;·&nbsp;
   <a href="https://mushcrypto.world/">mushcrypto.world</a>
   &nbsp;·&nbsp;
   <a href="https://mushcrypto.world/scorecard/">Scorecard</a>
