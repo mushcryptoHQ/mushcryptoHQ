@@ -7,7 +7,6 @@
   <a href="https://mushcrypto.world/scorecard/"><img src="https://img.shields.io/badge/Governance_Scorecard-060a14?style=for-the-badge&logo=googlesheets&logoColor=e2a63c" alt="Scorecard"></a>
   <a href="https://mushcrypto.world/docs/"><img src="https://img.shields.io/badge/Node_Docs-060a14?style=for-the-badge&logo=readthedocs&logoColor=00b6fd" alt="Docs"></a>
   <a href="https://github.com/mushcryptoHQ/node-guides"><img src="https://img.shields.io/badge/Node_Guides-060a14?style=for-the-badge&logo=github&logoColor=b98bff" alt="Node Guides"></a>
-  <a href="mailto:hello@mushcrypto.xyz"><img src="https://img.shields.io/badge/hello@mushcrypto.xyz-060a14?style=for-the-badge&logo=maildotru&logoColor=f2c675" alt="Email"></a>
 </p>
 
 <p align="center">
